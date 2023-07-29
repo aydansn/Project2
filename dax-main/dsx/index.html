@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container">
+        <div class="left"   >
+            <div class="first">
+                <img src="./Emblem_of_Azerbaijan_(simmetric).svg.png" alt="">
+                <h2>DXA</h2>
+            </div>
+            <div class="next">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-house"></i>Ana Sehife <i class="fa-solid fa-chevron-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Yeni budce ilinin yaradilmasi</a>
+                      <a href="#">Budce tesnifatlarinda duzelis</a>
+                      <a href="#">Budce tesnifatlarinda baxis</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button onclick="myFunction2()" class="dropbtn2"><i class="fa-regular fa-calendar"></i>Tesnifatlar <i class="fa-solid fa-chevron-down"></i></button>
+                    <div id="myDropdown2" class="dropdown-content2">
+                      <a href="#">Yeni budce ilinin yaradilmasi</a>
+                      <a href="#">Budce tesnifatlarinda duzelis</a>
+                      <a href="#">Budce tesnifatlarinda baxis</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="navigation">
+                <h2>Yeni Budce ilinin yaradilmasi</h2>
+                <nav>
+                    <div class="navbox">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="navtext">
+                      <i class="fa-regular fa-user"></i>
+                        <p>Khayal Mammadov</p>
+                    </div>
+                    <div class="navbox2">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="top">
+                    <h2 class="text1">Fayl ile yarat</h2>
+                    <h2 class="text2">Oten ilden kocur</h2>
+                </div>
+                <div class="bottom">
+                    <div class="b-top">
+                        <select name="" id="">
+                            <option value="">Budce ili</option>
+                            <option value="">Budce ili</option>
+                            <option value="">Budce ili</option>
+                            <option value="">Budce ili</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Tesnifati</option>
+                            <option value="">Budce ili</option>
+                            <option value="">Budce ili</option>
+                            <option value="">Budce ili</option>
+                            <option value="">Budce ili</option>
+                        </select>
+                    </div>
+                        <div class="b-center">
+                            <input type="file">
+                            <p>veya faylinizi bura atin <br>yalniz .xlsv format</p>
+                        </div>
+                </div>
+                <div class="bottom2">
+                <button class="btn2">Imtina et</button>
+                <button>Qeyde al</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
+    </script>
+</body>
+</html>
